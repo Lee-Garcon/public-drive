@@ -1,6 +1,14 @@
 # ignore all
 *
 
+# except README
+!README.md
+
+# except helper commands
+!encrypt
+!decrypt
+!checkout
+
 # except encrypted files
 !*.enc
 
