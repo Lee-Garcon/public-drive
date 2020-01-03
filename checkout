@@ -1,5 +1,13 @@
 #!/bin/bash
 git add *
 git add .gitignore
-git commit -m "Updated"
+
+if [ -n $1 ]
+then
+	message="$1"
+else
+	message="Updated"
+fi
+git commit -m $message
+
 git push origin master
