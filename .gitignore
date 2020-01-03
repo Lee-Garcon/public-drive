@@ -1,1 +1,11 @@
-*.backup
+# ignore all
+*
+
+# except encrypted files
+!*.enc
+
+# and backup files
+!*.enc.backup
+
+# and .gitignores
+!.gitignores
