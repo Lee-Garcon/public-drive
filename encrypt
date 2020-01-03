@@ -3,5 +3,6 @@
 zip -r $1.zip $1
 openssl aes-256-cbc -in $1.zip -out $1.zip.enc
 git add *
+git add .gitignore
 git commit -m "Updated $1.enc"
 git push origin master
